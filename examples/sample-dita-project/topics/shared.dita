@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="shared">
+  <title>Shared content</title>
+  <body>
+    <p id="portable">The sample content remains portable DITA XML.</p>
+  </body>
+</topic>

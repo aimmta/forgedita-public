@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "forgedita.conformance-evidence/v1alpha1",
+  "example": true,
+  "claimId": "ROUNDTRIP-NATIVE-XML-EXAMPLE",
+  "ditaTrack": "1.3",
+  "implementationVersion": "example-only",
+  "fixture": "sample-dita-project/maps/product.ditamap",
+  "expected": "Export preserves standards-compliant DITA without proprietary markup",
+  "actual": "Illustrative record only; no test was executed",
+  "status": "illustrative",
+  "inputSha256": "EXAMPLE_NOT_A_REAL_HASH",
+  "outputSha256": "EXAMPLE_NOT_A_REAL_HASH",
+  "limitations": [
+    "This file demonstrates the proposed evidence shape.",
+    "It is not current product evidence."
+  ]
+}

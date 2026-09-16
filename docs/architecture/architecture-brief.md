@@ -1,5 +1,7 @@
 # ForgeDITA Architecture Brief
 
+> **Document status:** Target architecture and design rationale. This document is not a statement that every described behavior is currently implemented. See [Product Status](../../STATUS.md) and the [Public Conformance Statement](../conformance/public-conformance-statement.md).
+
 ## A Standards-First Operating Model for Maintainable DITA Infrastructure
 
 ## 1. Why This Exists

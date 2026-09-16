@@ -1,5 +1,7 @@
 # ForgeDITA Whitepaper
 
+> **Document status:** Target architecture and design rationale. Current product claims are limited to the [Public Conformance Statement](../conformance/public-conformance-statement.md).
+
 ## Multi-Tenant Architecture and the Toolchain Registry Model
 
 ## 1. Why Multi-Tenancy Usually Fails in Practice

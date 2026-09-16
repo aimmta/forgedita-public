@@ -1,0 +1,23 @@
+apiVersion: forgedita.io/v1alpha1
+kind: ToolchainBundle
+metadata:
+  tenant: example
+  name: example-core
+  version: 2026.09.1
+spec:
+  ditaSpec: "1.3"
+  ditaOt: "4.4"
+  semanticRegistry: registry/example-registry.yaml
+  plugins:
+    - id: org.dita.html5
+      version: bundled
+  catalogs:
+    - catalog.xml
+  grammars:
+    - dtd/technicalContent/dtd/topic.dtd
+  validation:
+    - schematron/example-policy.sch
+  profiles:
+    - name: html5-public
+      format: html5
+      ditaval: filters/public.ditaval

@@ -1,133 +1,113 @@
 # ForgeDITA Public
 
-Architecture-first exploration of maintainable, standards-first DITA infrastructure.
+Standards-first DITA infrastructure designed to remain understandable and maintainable as complexity grows.
 
-This repository contains public-facing documents describing the architectural direction, operating principles, and technical assumptions behind ForgeDITA.
+[Website](https://forgedita.com) | [Architecture](docs/architecture/architecture-overview.md) | [Conformance](docs/conformance/public-conformance-statement.md) | [Current status](STATUS.md) | [Contact](mailto:hello@forgedita.com)
 
-This is not the product codebase.
+## What ForgeDITA Is
 
-It is the thinking behind the product.
+ForgeDITA is an architecture-first DITA CCMS in active development. It is built around a direct premise:
 
-## Why This Repository Exists
+> Documentation infrastructure should remain understandable, reproducible, and portable over time.
 
-Many structured content environments slowly become operationally difficult to live with.
+The design emphasizes:
 
-Experienced practitioners recognize the pattern:
+- native DITA XML as the system of record
+- explicit, versioned processing semantics
+- graph-aware validation and impact analysis
+- tenant-scoped, immutable publishing toolchains
+- editor independence through open APIs
+- public, bounded conformance claims
 
-- publishing behavior drifts
-- customization accumulates
-- semantics become fragmented
-- workflows expand around platform limitations
-- operational workarounds become institutionalized
-- and tribal knowledge becomes necessary just to maintain stability
+This repository contains the public architecture, contracts, examples, and conformance material behind those commitments. It is not the private product source repository.
 
-Teams adapt.
+## Current Status
 
-They build processes around the system.
+ForgeDITA is moving from architecture validation toward MVP implementation. Some documented capabilities are executable prototypes; others remain target architecture. The repository distinguishes among:
 
-Eventually the operational overhead surrounding documentation becomes larger than the documentation changes themselves.
+- **Claimed:** backed by current implementation evidence
+- **Prototype:** executable but not yet a production guarantee
+- **Planned:** architectural direction, not current capability
+- **Not claimed:** explicitly outside the current conformance boundary
 
-ForgeDITA exists because too many organizations quietly accept this trajectory as inevitable.
+See [STATUS.md](STATUS.md) before treating any architecture document as a product claim.
 
-This repository documents an alternative architectural approach.
+## Architectural Model
 
-## Core Position
+```mermaid
+flowchart TD
+  A["Oxygen or API client"] --> B["ForgeDITA APIs"]
+  B --> C["Native XML content"]
+  B --> D["Graph and resolution"]
+  B --> E["Validation"]
+  B --> F["Baselines and workflow"]
+  B --> G["Publish orchestration"]
+  G --> H["Versioned toolchain bundle"]
+  C --> I["Portable repository export"]
+  D --> J["Map context and impact"]
+  F --> K["Release evidence"]
+  H --> L["Reproducible artifacts"]
+```
 
-ForgeDITA is built around a direct premise:
+## Explore the Repository
 
-## Documentation infrastructure should remain understandable and maintainable over time
+### Product and architecture
 
-The platform is intentionally designed around:
+- [Product principles](docs/product-principles.md)
+- [Architecture overview](docs/architecture/architecture-overview.md)
+- [Architecture brief](docs/architecture/architecture-brief.md)
+- [Reference architecture](docs/architecture/reference-architecture.md)
+- [Multi-tenant toolchain registry](docs/architecture/multi-tenant-toolchain-registry.md)
+- [Extensibility architecture](docs/architecture/extensibility-architecture.md)
+- [Security architecture](docs/architecture/security-architecture.md)
+- [Editor authoring contract](docs/editor-authoring-contract.md)
 
-- standards integrity
-- explicit semantics
-- reproducible publishing
-- graph-aware processing
-- operational clarity
-- and long-term maintainability
+### Conformance and evidence
 
-The goal is not to accumulate more enterprise complexity.
+- [Public conformance statement](docs/conformance/public-conformance-statement.md)
+- [Conformance matrix](docs/conformance/conformance-matrix.md)
+- [Evidence model](docs/conformance/evidence-index.md)
+- [Illustrative evidence record](examples/conformance-evidence/example-evidence.json)
 
-The goal is to reduce operational fragility before it becomes normalized.
+### Publishing
 
-## Contents
+- [Reproducible publishing](docs/publishing/reproducible-publishing.md)
+- [Toolchain bundles](docs/publishing/toolchain-bundles.md)
+- [Runtime manifests](docs/publishing/runtime-manifests.md)
 
-This repository contains architecture-focused documents intended for experienced DITA and structured-authoring practitioners.
+### Content model
 
-Current documents include:
+- [Native XML storage](docs/content-model/native-xml-storage.md)
+- [Graph and resolution](docs/content-model/graph-and-resolution.md)
+- [Semantic registry](docs/content-model/semantic-registry.md)
 
-## Architecture Brief
+### Integration
 
-A high-level overview of the ForgeDITA operating model:
+- [API overview](docs/integration/api-overview.md)
+- [Capability discovery](docs/integration/capability-discovery.md)
+- [Events and webhooks](docs/integration/webhooks.md)
 
-- native XML as system of record
-- tenant-scoped semantic registry
-- graph-aware services
-- Bring Your Own Editor architecture
-- immutable publishing model
-- operational maintainability principles
+### Examples
 
-## Multi-Tenant Architecture and Toolchain Registry Model
+- [Sample DITA project](examples/sample-dita-project/README.md)
+- [Toolchain bundle manifest](examples/toolchain-bundle-manifest/toolchain-bundle.yaml)
+- [Runtime manifest](examples/runtime-manifest/runtime-manifest.json)
 
-A deeper exploration of:
+## What ForgeDITA Does Not Claim
 
-- tenant isolation
-- explicit processing environments
-- toolchain versioning
-- reproducible publishing
-- semantic isolation
-- graph-aware multi-tenancy
-- and operational reproducibility
+ForgeDITA does not claim complete DITA 1.3 support merely because representative examples work. It does not currently claim DITA 2.0 support, production-grade isolated publishing workers, complete specialization interactions, or complete context-sensitive reference resolution.
 
-## What This Repository Is
-
-- a working architectural model
-- a technical position on maintainable DITA infrastructure
-- a set of explicit assumptions and trade-offs
-- an attempt to make system behavior understandable
-
-## What This Repository Is Not
-
-- a marketing site
-- a feature checklist
-- a finalized implementation
-- a generic SaaS positioning exercise
-
-The goal is clarity.
-
-Not hype.
-
-## Why Architecture-First
-
-ForgeDITA is intentionally being developed architecture-first.
-
-The goal is to validate:
-
-- operational assumptions
-- semantic models
-- reproducibility constraints
-- governance requirements
-- and architectural trade-offs
-
-before large-scale implementation.
-
-The architecture matters because operational fragility is usually easier to prevent than to remove later.
+The authoritative boundary is the [public conformance statement](docs/conformance/public-conformance-statement.md).
 
 ## Feedback
 
-If you operate DITA systems at scale, your perspective would be valuable.
+Experienced DITA practitioners are invited to challenge the model:
 
-Particularly:
+- Which assumptions fail in real environments?
+- Where does explicit governance become excessive?
+- Which interoperability cases deserve fixtures?
+- Which operational failure modes remain unaddressed?
 
-- Where does this model fail operationally?
-- Which assumptions become unrealistic in practice?
-- What hidden complexity risks remain?
-- Which trade-offs would organizations reject?
-- What long-term maintenance problems are still unsolved?
+Send feedback to [hello@forgedita.com](mailto:hello@forgedita.com).
 
-## Contact
-
-<hello@forgedita.com>
-<https://forgedita.com>
-
-Structured content infrastructure designed for long-term maintainability.
+Copyright 2026 ForgeDITA.

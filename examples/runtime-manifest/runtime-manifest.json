@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "forgedita.runtime-manifest/v1alpha1",
+  "example": true,
+  "jobId": "pub_example_001",
+  "tenantId": "example",
+  "baseline": {
+    "id": "baseline_example_001",
+    "revisionSetSha256": "EXAMPLE_NOT_A_REAL_HASH"
+  },
+  "toolchainBundle": {
+    "name": "example-core",
+    "version": "2026.09.1",
+    "manifestSha256": "EXAMPLE_NOT_A_REAL_HASH"
+  },
+  "semanticRegistryVersion": "2026.09.1",
+  "publishProfile": "html5-public",
+  "status": "example",
+  "artifacts": [
+    {
+      "path": "index.html",
+      "sha256": "EXAMPLE_NOT_A_REAL_HASH"
+    }
+  ],
+  "publishFingerprint": "EXAMPLE_NOT_A_REAL_HASH"
+}

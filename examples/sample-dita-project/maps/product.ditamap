@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map id="product-map">
+  <title>ForgeDITA Sample Product</title>
+  <keydef keys="product-name" href="../topics/product-name.dita"/>
+  <topicref href="../topics/overview.dita"/>
+</map>
