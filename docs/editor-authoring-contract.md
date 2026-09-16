@@ -23,7 +23,7 @@ This contract defines the expected authoring flow, API profile, error handling, 
 
 ## Authentication And Scope
 
-Prototype headers:
+Local-development authentication headers:
 
 ```http
 Authorization: Bearer dev-alex-token

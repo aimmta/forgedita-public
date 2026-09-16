@@ -16,7 +16,7 @@ The response can identify:
 - supported import types and modes
 - relevant tenant policies
 - size or job limits
-- feature status such as claimed, prototype, planned, or unsupported
+- feature status such as claimed, beta, planned, or unsupported
 
 ## Client Use
 

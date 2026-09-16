@@ -2,33 +2,36 @@
 
 Last updated: September 2026
 
-ForgeDITA is in architecture-first development toward an MVP. This page separates current claims from architectural intent.
+ForgeDITA is in active beta. The MVP and release-candidate milestones are complete, and the product has progressed through core beta API, web UI, deployment, import, conformance, and editor-integration work. This page separates beta capability from completed production acceptance.
 
 ## Current Claims
 
-The current public claim boundary is maintained in the [Public Conformance Statement](docs/conformance/public-conformance-statement.md). It includes bounded support for native repository objects, core authoring operations, prototype validation coordination, graph extraction, preview and publish jobs, lightweight workflow, workspace search, and capability discovery.
+The current public claim boundary is maintained in the [Public Conformance Statement](docs/conformance/public-conformance-statement.md). Beta implementation includes native repository objects, repository and content APIs, validation coordination, graph extraction and contextual resolution, baseline and release operations, queued preview and publish jobs, package-registry operations, workflow APIs, webhooks, search, bulk import, capability discovery, a client-facing web UI, and an Oxygen add-on package under final acceptance.
 
-## Prototype-Level Areas
+## Completed Beta Foundations
 
-These areas have executable paths but are not yet production guarantees:
+The following foundations have passed their current beta gates:
 
-- layered validation across toolchain assets
-- semantic-registry-backed graph extraction
-- basic map context and key lookup
-- impact analysis
-- DITA-OT-backed preview and publish jobs
-- search facets for selected DITA metadata
+- production-oriented authentication and tenant-management contracts
+- repository, content, baseline, release, package-registry, workflow, and webhook APIs
+- OIDC-capable web UI flows and administrative surfaces
+- Docker Compose deployment packaging with Postgres, MinIO/S3, workers, webhook dispatch, metrics, and optional NATS JetStream
+- layered validation using tenant toolchain assets
+- semantic-registry-backed graph extraction, map context, resolution, and impact analysis
+- queued DITA-OT preview and publish with manifests, signed artifacts, retry, cancellation, and runtime confinement
+- Postgres search with ranking, highlights, DITA metadata, graph facets, and baseline/release views
+- size-aware bulk import with dry-run analysis and post-import graph prompts
+- generated conformance statement and evidence publication
 
-## Planned Production Work
+## Active Beta Work
 
-- hardened asynchronous publish workers
-- stronger runtime isolation and cancellation
-- production object storage
-- expanded conformance fixtures
-- complete contextual reference-resolution coverage
-- broader specialization and subject-scheme coverage
-- packaged Oxygen integration
-- production-grade search and ranking
+- complete production Oxygen add-on acceptance and authoring UX evidence
+- close active editor state, validation, and path-identity edge cases
+- expand contextual resolution for scope inheritance, key scopes, conrefs, conkeyrefs, filtering, and subject schemes
+- add broader sanitized migration packages and interoperability fixtures
+- complete hosted identity-provider and deployment-environment evidence
+- deepen cloud-provider repeatability and production sandbox evidence
+- continue conformance, accessibility, performance, and adversarial QA
 
 ## Explicitly Not Claimed
 
@@ -42,3 +45,5 @@ These areas have executable paths but are not yet production guarantees:
 ## Reading Architecture Documents
 
 Architecture documents describe the intended operating model. They are design contracts and review material, not proof that every described behavior is currently implemented.
+
+Beta status means the product is available for controlled evaluation. It does not mean general availability, independent security certification, or complete DITA 1.3 conformance.

@@ -52,7 +52,7 @@ ForgeDITA currently claims API support for:
 
 ### Validation
 
-ForgeDITA currently claims prototype-level validation coordination across:
+ForgeDITA currently claims beta-level validation coordination across:
 
 - DITA-OT-backed validation
 - Tenant toolchain validation assets
@@ -79,23 +79,27 @@ This is not yet a complete DITA 1.3 resolution claim for every conref, conkeyref
 
 ### Publishing
 
-ForgeDITA currently claims prototype-level support for:
+ForgeDITA currently claims beta-level support for:
 
 - Preview jobs
 - Publish jobs
-- DITA-OT-backed local temp-workspace execution
+- queued DITA-OT-backed execution with runtime confinement
 - Runtime manifests
 - Logs, diagnostics, output artifacts, and object-store-backed job artifacts
-- Tenant-owned toolchain bundle selection
+- Tenant-owned toolchain bundle selection and promotion controls
+- Signed artifact retrieval, cancellation, and retry paths
 - Release/publish gating through the `release.requireReleaseEligible` tenant policy
 
-This is not yet a production isolation claim. Hardened async workers, cancellation, retries, and stronger sandboxing remain future work.
+This is not an independent production-isolation certification. Worker, queue, runtime-broker, cancellation, retry, manifest, and confinement paths exist at the current beta gate, while deployment-specific sandbox and scale acceptance remain active work.
 
 ### Workflow And Release Evidence
 
-ForgeDITA currently claims lightweight workflow support for:
+ForgeDITA currently claims beta workflow support for:
 
 - Node workflow state
+- Assignments and assignment history
+- Submit, approve, reject, comment, and governed transition operations
+- Separation-of-duties enforcement for approval
 - Release eligibility
 - External evidence references
 - Workflow comments
@@ -113,9 +117,11 @@ ForgeDITA currently claims:
 - Rebuild support
 - Paging metadata
 - Match/snippet provenance
-- First-pass DITA metadata facets for IDs, keys, and references
+- DITA, profile, taxonomy, and semantic facets
+- Graph-derived inbound and outbound facets
+- Baseline- and release-constrained views
 
-This is not yet a production-grade search claim for ranking, highlighting, taxonomy, subject schemes, graph facets, or release/baseline search views.
+Representative-corpus scale, relevance tuning, and complete subject-scheme behavior remain active beta work.
 
 ### Capability Discovery
 
@@ -134,12 +140,11 @@ ForgeDITA does not yet claim complete support for:
 - Complete DITAVAL and subject-scheme-aware validation
 - Branch-aware repository semantics
 - DITA 2.0
-- Production-grade search
-- Production-grade isolated publishing workers
-- S3-compatible production object storage
-- Oxygen add-on packaging
-- Merge/update import semantics
-- A full public generated conformance matrix
+- independently certified production runtime isolation
+- broad cloud-provider repeatability beyond the current S3-compatible MinIO evidence
+- final production Oxygen add-on acceptance
+- semantic XML merge behavior beyond explicit path-level import modes
+- universal DITA 1.3 conformance
 
 ## Conformance Test Strategy
 

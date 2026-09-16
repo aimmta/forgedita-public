@@ -31,6 +31,6 @@ See the [illustrative evidence record](../../examples/conformance-evidence/examp
 
 ## Promotion Policy
 
-A passing prototype does not automatically become a public claim. Claim promotion requires repeatable evidence and an update to both the conformance matrix and public statement.
+A passing beta path does not automatically become a complete public conformance claim. Claim promotion requires repeatable evidence and an update to both the conformance matrix and public statement.
 
 The files in `examples/` demonstrate intended evidence shapes. They are illustrative and must not be interpreted as current test results.

@@ -60,7 +60,7 @@ Rules:
 5. Readiness must be separate from deep dependency health.
 6. Postgres, object storage, DITA-OT, queue, and runtime isolation must each have visible health and timing surfaces.
 7. Fast regression, Postgres smoke, live external-runtime, object-store, and conformance-depth suites must be tiered so one slow integration class does not destabilize all evidence.
-8. The PowerShell prototype must not become architectural lock-in. Stable API, graph, validation, and runtime contracts should remain portable to Python or another production runtime when evidence shows the prototype runtime is the bottleneck.
+8. The current PowerShell implementation must not become architectural lock-in. Stable API, graph, validation, and runtime contracts should remain portable to Python or another production runtime when evidence shows the current runtime is the bottleneck.
 
 **Non-Negotiable APIs**
 

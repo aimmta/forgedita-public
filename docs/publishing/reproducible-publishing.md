@@ -32,4 +32,4 @@ A release rebuild should select the original baseline, bundle, and profile. The 
 
 ## Boundary
 
-Deterministic fingerprints and prototype publishing paths are part of the current direction. Hardened production workers and complete reproducibility coverage remain subject to the [current status](../../STATUS.md) and conformance evidence.
+Deterministic fingerprints, queued workers, signed artifacts, retry and cancellation, runtime manifests, and container-oriented runtime confinement are implemented at the current beta gate. Environment-specific production acceptance and complete reproducibility coverage remain subject to the [current status](../../STATUS.md) and conformance evidence.

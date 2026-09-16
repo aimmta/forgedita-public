@@ -1,6 +1,6 @@
 # Graph Resolution Architecture
 
-> **Document status:** Target architecture with prototype-aligned behavior. Current claims are limited to the [Public Conformance Statement](../conformance/public-conformance-statement.md).
+> **Document status:** Beta architecture aligned with executable graph, map-context, resolution, and impact-analysis paths. Complete DITA relationship semantics remain bounded by the [Public Conformance Statement](../conformance/public-conformance-statement.md).
 
 This document turns the `Graph & Resolution Service` from the [Reference Architecture](../architecture/reference-architecture.md) into an implementation-oriented design for ForgeDITA.
 

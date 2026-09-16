@@ -23,10 +23,10 @@ This repository contains the public architecture, contracts, examples, and confo
 
 ## Current Status
 
-ForgeDITA is moving from architecture validation toward MVP implementation. Some documented capabilities are executable prototypes; others remain target architecture. The repository distinguishes among:
+ForgeDITA is in active beta. The MVP, release-candidate, core API, client-facing web UI, deployable-stack, and conformance-publication gates have been completed. Current work is focused on production Oxygen acceptance, deeper DITA interoperability, beta hardening, and closing documented edge cases. The repository distinguishes among:
 
 - **Claimed:** backed by current implementation evidence
-- **Prototype:** executable but not yet a production guarantee
+- **Beta:** implemented and under active evaluation or hardening
 - **Planned:** architectural direction, not current capability
 - **Not claimed:** explicitly outside the current conformance boundary
 
@@ -95,7 +95,7 @@ flowchart TD
 
 ## What ForgeDITA Does Not Claim
 
-ForgeDITA does not claim complete DITA 1.3 support merely because representative examples work. It does not currently claim DITA 2.0 support, production-grade isolated publishing workers, complete specialization interactions, or complete context-sensitive reference resolution.
+ForgeDITA does not claim complete DITA 1.3 support merely because representative examples work. It does not currently claim DITA 2.0 support, independently certified production isolation, complete specialization interactions, or complete context-sensitive reference resolution.
 
 The authoritative boundary is the [public conformance statement](docs/conformance/public-conformance-statement.md).
 

@@ -397,7 +397,7 @@ Questions:
 - Website: <https://forgedita.com>
 - Contact: <hello@forgedita.com>
 
-ForgeDITA is currently in architecture-first development toward MVP.
+ForgeDITA is currently in active beta. This model now governs implemented tenant, toolchain, validation, publishing, and deployment paths that remain under beta hardening.
 
 Structured content infrastructure designed for long-term operational maintainability.
 
