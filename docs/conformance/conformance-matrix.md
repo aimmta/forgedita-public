@@ -52,8 +52,9 @@ Statuses:
 | Branch-aware repositories | Not Claimed | Deferred beyond the current beta scope |
 | Broad cloud-provider object-storage readiness | Not Claimed | S3-compatible paths are validated with MinIO; broader provider repeatability remains open |
 | Independently certified production runtime isolation | Not Claimed | Worker, broker, and container-oriented confinement exist at beta; certification is not claimed |
-| Production-accepted Oxygen add-on | Not Claimed | Packaged beta add-on and update-site artifacts exist; final task-by-task acceptance remains open |
+| Production-accepted Oxygen add-on | Not Claimed | Manual Oxygen UX acceptance is complete for frozen package 0.3.98; package promotion and overall release-candidate/production approval remain separate. See [current status](../../STATUS.md) |
 
 ## Matrix Maintenance Rule
 
 A row can move from `Partial` to `Claimed` only when the feature has fixture coverage, smoke or conformance test evidence, and no known architecture contradiction in the backlog.
+

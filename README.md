@@ -23,7 +23,7 @@ This repository contains the public architecture, contracts, examples, and confo
 
 ## Current Status
 
-ForgeDITA is in active beta. The MVP, release-candidate, core API, client-facing web UI, deployable-stack, and conformance-publication gates have been completed. Current work is focused on production Oxygen acceptance, deeper DITA interoperability, beta hardening, and closing documented edge cases. The repository distinguishes among:
+ForgeDITA is in active beta for controlled evaluation. Completed MVP foundations and core API, web UI, deployment packaging, and conformance-publication work retain their accepted scope. Release-candidate acceptance remains in progress. CI run `40809721638` succeeded on its latest attempt, with hosted IdP smoke skipped; formal QA acceptance and the final candidate decision remain separate. Accepted browser and Oxygen work is retained. See [STATUS.md](STATUS.md) for the reviewed evidence and outstanding acceptance requirements. Beta availability is not general availability or production release approval. The repository distinguishes among:
 
 - **Claimed:** backed by current implementation evidence
 - **Beta:** implemented and under active evaluation or hardening
@@ -111,3 +111,4 @@ Experienced DITA practitioners are invited to challenge the model:
 Send feedback to [hello@forgedita.com](mailto:hello@forgedita.com).
 
 Copyright 2026 ForgeDITA.
+

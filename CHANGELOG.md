@@ -2,6 +2,13 @@
 
 This changelog tracks public architecture and evidence releases. Product implementation releases will use their own versioned release notes.
 
+## 2026-10-29: Release-Candidate Status And Navigation Correction
+
+- removed unsupported release-candidate completion claims while retaining completed beta capabilities and accepted browser/Oxygen scope
+- recorded the successful latest attempt of CI run `40809721638`, its earlier provider-job failure, and skipped hosted IdP smoke without treating CI success as formal QA or release approval
+- aligned current status and roadmap with outstanding acceptance requirements; preserved existing conformance claim levels
+- aligned website technical-evidence links with `aimmta/forgedita-public`
+
 ## 2026-09: Beta Status Correction
 
 - corrected repository language that inaccurately described ForgeDITA as moving toward MVP
@@ -16,3 +23,4 @@ This changelog tracks public architecture and evidence releases. Product impleme
 - added conformance statement, matrix, and evidence model
 - added publishing and integration explainers
 - added illustrative DITA, bundle, runtime-manifest, and evidence examples
+

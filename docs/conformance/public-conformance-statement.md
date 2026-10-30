@@ -1,6 +1,6 @@
 # Public Conformance Statement
 
-> **Document status:** Current public claim boundary. Last packaged September 2026.
+> **Document status:** Current public claim boundary. Last packaged September 2026; acceptance-status reference corrected October 29, 2026. DITA claim levels are unchanged.
 
 ForgeDITA is a standards-first DITA CCMS. The product rule is:
 
@@ -142,7 +142,7 @@ ForgeDITA does not yet claim complete support for:
 - DITA 2.0
 - independently certified production runtime isolation
 - broad cloud-provider repeatability beyond the current S3-compatible MinIO evidence
-- final production Oxygen add-on acceptance
+- production release approval or promotion of the Oxygen add-on (completed manual UX acceptance at the frozen package scope is described in [current status](../../STATUS.md))
 - semantic XML merge behavior beyond explicit path-level import modes
 - universal DITA 1.3 conformance
 
@@ -161,3 +161,4 @@ The current working matrix is maintained in the [Conformance Matrix](conformance
 ## Product Rule
 
 If ForgeDITA cannot preserve standards-compliant DITA without proprietary transformation or hidden professional-services dependency, the feature is not complete.
+

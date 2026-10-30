@@ -2,13 +2,15 @@
 
 This roadmap describes direction rather than delivery dates. A capability becomes a public claim only after implementation and evidence satisfy the conformance policy.
 
-## Now: Close the Beta 3 Acceptance Gate
+## Now: Complete Beta Release-Candidate Acceptance
 
-- complete package-exact Oxygen acceptance across supported authoring tasks
-- close active editor-state, validation-scope, and repository-path findings
-- finish production-shaped browser and administrator acceptance
-- retain zero-skip evidence and exact package provenance
-- publish current beta limitations with every evaluation build
+- retain completed browser acceptance at the agreed scope and manual Oxygen UX acceptance for frozen package 0.3.98
+- obtain formal QA acceptance of integrated CI and security/conformance evidence, including the successful latest attempt of run `40809721638`
+- complete deployment/runbook and representative-workload performance acceptance
+- complete independent customer onboarding and the beta-candidate decision
+- publish candidate-specific release notes and limitations
+
+The latest documented QA disposition remains NO-GO pending acceptance; a successful CI run is supporting evidence. See [current status](STATUS.md).
 
 ## Next: Design-Partner Beta
 
@@ -37,3 +39,4 @@ Planned behavior is not promoted to claimed behavior until it has:
 3. negative tests
 4. versioned evidence
 5. an updated public conformance statement
+
